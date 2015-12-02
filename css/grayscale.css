@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 html {
@@ -128,6 +128,7 @@ a:focus {
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
+        opacity: 0.5;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -137,22 +138,23 @@ a:focus {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
+        opacity: 0.5;
     }
 }
 
 .intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+   display: table;
+   width: 100%;
+   height: auto;
+   padding: 100px 0;
+   text-align: center;
+   color: #fff;
+   background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+   background-color: #000;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
 }
 
 .intro .intro-body {
@@ -265,8 +267,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
+    background: url(../img/downloads-bg.jpg) no-repeat center center intro-bg;
+    background-color: #ffffff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -305,17 +307,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #fff;
+    color: #fff;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #fff;
     outline: 0;
-    color: #000;
-    background-color: #42dca3;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
 }
 
 ul.banner-social-buttons {
