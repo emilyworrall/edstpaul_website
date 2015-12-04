@@ -28,3 +28,13 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(document).ready( function() {
+
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: 410,
+    isFitWidth: true
+  });
+
+});

@@ -13,6 +13,7 @@ body {
 }
 
 html {
+    zoom: 75%;
     width: 100%;
     height: 100%;
 }
@@ -396,4 +397,45 @@ body {
 .glyphicon {
   margin-left: 1px;
   top: 8%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #fff;
+  /* center */
+  margin: 0 auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  width: 410px;
+  height: 250px;
+  float: left;
+  background: #fff;
+  border: 1px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+}
+
+#projects {
+  width: 90%;
+}
+
+.container {
+  width: 90%;
 }
