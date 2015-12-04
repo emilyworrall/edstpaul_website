@@ -33,7 +33,7 @@ $(document).ready( function() {
 
   $('.grid').masonry({
     itemSelector: '.grid-item',
-    columnWidth: 410,
+    columnWidth: 480,
     isFitWidth: true
   });
 

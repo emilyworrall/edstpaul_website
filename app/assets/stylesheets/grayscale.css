@@ -424,7 +424,7 @@ body { font-family: sans-serif; }
 /* ---- grid-item ---- */
 
 .grid-item {
-  width: 410px;
+  width: 480px;
   height: 250px;
   float: left;
   background: #fff;
