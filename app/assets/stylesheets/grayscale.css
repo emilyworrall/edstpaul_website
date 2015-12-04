@@ -392,3 +392,8 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+.glyphicon {
+  margin-left: 1px;
+  top: 8%;
+}
