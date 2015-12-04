@@ -44,6 +44,10 @@ p {
     }
 }
 
+p.intro-text {
+  font-family: Montserrat;
+}
+
 a {
     color: #42dca3;
     -webkit-transition: all .2s ease-in-out;
