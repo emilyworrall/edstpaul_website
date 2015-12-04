@@ -13,7 +13,6 @@ body {
 }
 
 html {
-    zoom: 75%;
     width: 100%;
     height: 100%;
 }
@@ -395,8 +394,7 @@ body {
 }
 
 .glyphicon {
-  margin-left: 1px;
-  top: 8%;
+  top: 6%;
 }
 
 * {
