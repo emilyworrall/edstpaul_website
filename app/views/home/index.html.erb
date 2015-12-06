@@ -51,46 +51,13 @@
             </div>
           </div>
           <div class="item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Edward St Paul</h1>
-                        <p class="intro-text">Freelance Cinematographer based in London<br></p>
-                        <!-- Link to showreel here -->
-                        <a ng-click="openPopUp()" class="btn btn-circle">
-                          <span class="glyphicon glyphicon-play"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <%= render 'intro' %>
           </div>
           <div class="item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Edward St Paul</h1>
-                        <p class="intro-text">Freelance Cinematographer based in London<br></p>
-                        <!-- Link to showreel here -->
-                        <a ng-click="openPopUp()" class="btn btn-circle">
-                          <span class="glyphicon glyphicon-play"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <%= render 'intro' %>
           </div>
           <div class="item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Edward St Paul</h1>
-                        <p class="intro-text">Freelance Cinematographer based in London<br></p>
-                        <!-- Link to showreel here -->
-                        <a ng-click="openPopUp()" class="btn btn-circle">
-                          <span class="glyphicon glyphicon-play"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <%= render 'intro' %>
           </div>
         </div>
       </div>
@@ -98,70 +65,62 @@
 </header>
 
 <!-- Projects Section -->
-<section id="projects" class="container content-section text-center">
+<section id="projects" class="container content-section">
 
-    <div class="grid">
-      <div class="grid-item" ng-click="openPopUp()">
-      </div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
+  <div class="projects-container" id="sort">
+    <a href="" data-filter="*" class="current">all</a>
+    <i class="fa fa-ellipsis-v"></i>
+    <a href="" data-filter=".music">music videos</a>
+    <i class="fa fa-ellipsis-v"></i>
+    <a href="" data-filter=".features">features/shorts</a>
+    <i class="fa fa-ellipsis-v"></i>
+    <a href="" data-filter=".commercials">commercials</a>
+  </div>
 
-    </div>
+  <div class="grid">
+    <div class="grid-item music" ng-click="openPopUp2()"></div>
+    <div class="grid-item music"></div>
+    <div class="grid-item music"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+
+  </div>
 
 </section>
-
-<!-- Gallery Section -->
-<!-- <section id="gallery" class="content-section text-center">
-    <div class="download-section">
-        <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Download Grayscale</h2>
-                <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <!-- Contact Section -->
 <section id="contact" class="container content-section text-center">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-            <h2>Contact Start Bootstrap</h2>
-            <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+            <h2>Contact</h2>
+
             <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
             </p>
+
             <ul class="list-inline banner-social-buttons">
                 <li>
-                    <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    <a href="" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    <a href="" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
                 </li>
                 <li>
-                    <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    <a href="" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span></a>
                 </li>
             </ul>
         </div>
@@ -171,7 +130,7 @@
 <!-- Footer -->
 <footer>
     <div class="container text-center">
-        <p>Copyright &copy; Your Website 2014</p>
+        <p>Copyright &copy; Edward St Paul 2015</p>
     </div>
 </footer>
 
@@ -179,6 +138,15 @@
 <script type="text/ng-template" id="showreel">
   <div class="showreel-content">
     <iframe id="showreel-vid" width="1000" height="460"
+    src="http://www.youtube.com/embed/d3hsPjdzwSU?autoplay=1" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+    frameBorder="0">
+    </iframe>
+  </div>
+</script>
+
+<script type="text/ng-template" id="m1">
+  <div class="m1-content">
+    <iframe id="m1-vid" width="1000" height="460"
     src="http://www.youtube.com/embed/d3hsPjdzwSU?autoplay=1" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
     frameBorder="0">
     </iframe>

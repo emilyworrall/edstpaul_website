@@ -263,10 +263,6 @@ a:focus {
     }
 }
 
-.content-section {
-    padding-top: 100px;
-}
-
 #map {
     width: 100%;
     height: 200px;
@@ -275,7 +271,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
@@ -382,7 +378,7 @@ body {
 }
 
 .glyphicon {
-  top: 6%;
+  top: 4%;
 }
 
 * {
@@ -395,7 +391,7 @@ body { font-family: sans-serif; }
 /* ---- grid ---- */
 
 .grid {
-  background: #fff;
+  background: black;
   /* center */
   margin: 0 auto;
 }
@@ -418,10 +414,42 @@ body { font-family: sans-serif; }
   border-color: hsla(0, 0%, 0%, 0.5);
 }
 
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
 #projects {
   width: 90%;
 }
 
 .container {
   width: 90%;
+}
+
+#sort {
+  margin-bottom: 7px;
+  font-size: 110%;
+  text-align: center;
 }
