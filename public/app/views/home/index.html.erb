@@ -1,0 +1,175 @@
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <span class="light">Edward St Paul</span>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body">
+      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="active item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Edward St Paul</h1>
+                        <p class="intro-text">Freelance Cinematographer based in London<br></p>
+                        <!-- Link to showreel here -->
+                        <a ng-click="openPopUp()" class="btn btn-circle">
+                          <span class="glyphicon glyphicon-play"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="item">
+            <%= render 'intro' %>
+          </div>
+          <div class="item">
+            <%= render 'intro' %>
+          </div>
+          <div class="item">
+            <%= render 'intro' %>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+<!-- Projects Section -->
+<section id="projects" class="container content-section">
+
+  <div class="projects-container" id="sort">
+    <a href="" data-filter="*" class="current">all</a>
+    <i class="fa fa-ellipsis-v"></i>
+    <a href="" data-filter=".music">music videos</a>
+    <i class="fa fa-ellipsis-v"></i>
+    <a href="" data-filter=".features">features/shorts</a>
+    <i class="fa fa-ellipsis-v"></i>
+    <a href="" data-filter=".commercials">commercials</a>
+  </div>
+
+  <div class="grid">
+    <div class="grid-item music" ng-click="openPopUp2()"></div>
+    <div class="grid-item music"></div>
+    <div class="grid-item music"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+    <div class="grid-item features"></div>
+
+  </div>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>Contact</h2>
+
+            <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+            </p>
+
+            <ul class="list-inline banner-social-buttons">
+                <li>
+                    <a href="" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">Facebook</span></a>
+                </li>
+                <li>
+                    <a href="" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+                </li>
+                <li>
+                    <a href="" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; Edward St Paul 2015</p>
+    </div>
+</footer>
+
+<!-- Mosaic -->
+<script type="text/ng-template" id="showreel">
+  <div class="showreel-content">
+    <iframe id="showreel-vid" width="1000" height="460"
+    src="http://www.youtube.com/embed/d3hsPjdzwSU?autoplay=1" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+    frameBorder="0">
+    </iframe>
+  </div>
+</script>
+
+<script type="text/ng-template" id="m1">
+  <div class="m1-content">
+    <iframe id="m1-vid" width="1000" height="460"
+    src="http://www.youtube.com/embed/d3hsPjdzwSU?autoplay=1" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+    frameBorder="0">
+    </iframe>
+  </div>
+</script>
+
+<!-- Angularjs -->
+<!-- <script src="js/angular.min.js"></script> -->
+<!-- Angular Directives -->
+<!-- <script src="js/ngDialog.min.js"></script> -->
+
+<!-- Angular App -->
+<!-- <script src="js/app.js"></script> -->
+<!-- <script src="js/mainCtrl.js"></script> -->
+
+<!-- jQuery -->
+<!-- <script src="js/jquery.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+
+<!-- Plugin JavaScript -->
+<!-- <script src="js/jquery.easing.min.js"></script> -->
+
+<!-- Custom Theme JavaScript -->
+<!-- <script src="js/grayscale.js"></script> -->
