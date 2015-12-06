@@ -1,4 +1,4 @@
-app.controller('mainCtrl', function($scope, ngDialog) {
+app.controller('mainCtrl', ['$scope', 'ngDialog', function($scope, ngDialog) {
   $scope.openPopUp = function () {
     ngDialog.open({
       template: 'showreel'
@@ -10,4 +10,4 @@ app.controller('mainCtrl', function($scope, ngDialog) {
       template: 'm1'
     });
   };
-});
+}]);
