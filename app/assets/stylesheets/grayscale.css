@@ -392,8 +392,6 @@ body { font-family: sans-serif; }
 
 .w3-col {
   height: auto;
-  border: 1px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
 }
 
 .isotope-item {
