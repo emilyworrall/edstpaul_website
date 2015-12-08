@@ -6,7 +6,8 @@
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand page-scroll" href="#page-top">
-                <span class="light">Edward St Paul</span>
+                <span class="light">Edward St Paul |</span>
+                Cinematographer
             </a>
         </div>
 
@@ -18,9 +19,6 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#gallery">Gallery</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -37,18 +35,7 @@
         <!-- Carousel items -->
         <div class="carousel-inner">
           <div class="active item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Edward St Paul</h1>
-                        <p class="intro-text">Freelance Cinematographer based in London<br></p>
-                        <!-- Link to showreel here -->
-                        <a ng-click="openPopUp()" class="btn btn-circle">
-                          <span class="glyphicon glyphicon-play"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <%= render 'intro' %>
           </div>
           <div class="item">
             <%= render 'intro' %>

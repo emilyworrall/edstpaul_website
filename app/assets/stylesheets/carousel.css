@@ -24,33 +24,33 @@
 
 
 .row {
-  padding: 21% 0;
+  padding: 11% 0;
 
 }
 
 .item:nth-child(1) {
-  background: url(grass-bg-grad.jpg) no-repeat bottom center scroll;
+  background: url(girl.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .item:nth-child(2) {
-  background: url(intro-bg-grad2.jpg) no-repeat bottom center scroll;
+  background: url(ballet.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .item:nth-child(3) {
-  background: url(grass-bg-grad.jpg) no-repeat bottom center scroll;
+  background: url(girl.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .item:nth-child(4) {
-  background: url(intro-bg-grad2.jpg) no-repeat bottom center scroll;
+  background: url(blacknwhite-crop.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;

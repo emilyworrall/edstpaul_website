@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: black;
+    background-color: #fff;
 }
 
 html {
@@ -83,7 +83,7 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -391,9 +391,10 @@ body { font-family: sans-serif; }
 /* ---- grid ---- */
 
 .grid {
-  background: black;
+  background: white;
   /* center */
   margin: 0 auto;
+  max-width: 100%
 }
 
 /* clearfix */
@@ -452,4 +453,35 @@ body { font-family: sans-serif; }
   margin-bottom: 7px;
   font-size: 110%;
   text-align: center;
+}
+
+/* Responsive Stuff */
+@media screen and (max-width: 568px) {
+  /* Stack anything that isn't full-width on smaller screens
+     and doesn't provide the no-stacking-on-mobiles class */
+  .row:not(.no-stacking-on-mobiles) > .grid-item {
+    width: 100% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .grid-item .row .grid-item {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* Sometimes, you just want to be different on small screens */
+  .center-on-mobiles {
+    text-align: center !important;
+  }
+  .hide-on-mobiles {
+    display: none !important;
+  }
+}
+
+/* Expand the wrap a bit further on larger screens */
+@media screen and (min-width: 1180px) {
+  .wider .grid {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
 }
