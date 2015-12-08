@@ -388,29 +388,10 @@ body {
 
 body { font-family: sans-serif; }
 
-/* ---- grid ---- */
-
-.grid {
-  background: white;
-  /* center */
-  margin: 0 auto;
-  max-width: 100%
-}
-
-/* clearfix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 /* ---- grid-item ---- */
 
-.grid-item {
-  width: 480px;
-  height: 250px;
-  float: left;
-  background: #fff;
+.w3-col {
+  height: auto;
   border: 1px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
 }

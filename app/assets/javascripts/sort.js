@@ -1,5 +1,5 @@
 $(window).load(function(){
-    var $container = $('.grid');
+    var $container = $('.w3-row');
     $container.isotope({
         filter: '*',
         animationOptions: {
