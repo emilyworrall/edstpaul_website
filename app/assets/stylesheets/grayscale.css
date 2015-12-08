@@ -316,30 +316,6 @@ footer p {
     margin: 0;
 }
 
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
-}
-
 .showreel-content {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -357,11 +333,6 @@ body {
 
 .glyphicon {
   top: 4%;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body { font-family: sans-serif; }
@@ -422,46 +393,31 @@ body { font-family: sans-serif; }
 
 .image-hover {
   overflow: hidden;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3)
-}
-
-.image-hover a {
-  text-decoration: none
 }
 
 .img-zoom-in img {
-  transition: all .6s ease-in-out;
-  -webkit-transition: all .6s ease-in-out;
-  -moz-transition: all .6s ease-in-out;
-  -ms-transition: all .6s ease-in-out;
-  -o-transition: all .6s ease-in-out;
+  transition: all 1000ms ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -webkit-transition-duration: 1000ms;
+  -moz-transition-timing-function: ease-in;
+  -moz-transition-duration: 1000ms;
+  -ms-transition-timing-function: ease-in;
+  -ms-transition-duration: 1000ms;
+  -o-transition-timing-function: ease-in;
+  -o-transition-duration: 1000ms;
 }
 
 .img-zoom-in:hover img {
-  transform: scale(1.08);
-  -webkit-transform: scale(1.08);
-  -moz-transform: scale(1.08);
-  -ms-transform: scale(1.08);
-  -o-transform: scale(1.08)
-}
-
-.img-sharp-blur img {
-  transition: all .6s ease-in-out;
-  -webkit-transition: all .6s ease-in-out;
-  -moz-transition: all .6s ease-in-out;
-  -ms-transition: all .6s ease-in-out;
-  -o-transition: all .6s ease-in-out;
-}
-
-.img-sharp-blur:hover img {
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: url(blur.svg#blur);
-  filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='3');
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  filter: brightness(80%) grayscale(10%);
+  -webkit-filter: brightness(80%) grayscale(10%);
+  -moz-filter: brightness(80%) grayscale(10%);
+  -ms-filter: brightness(80%) grayscale(10%);
+  -o-filter: brightness(80%) grayscale(10%);
 }
 
 /* Responsive Stuff */
