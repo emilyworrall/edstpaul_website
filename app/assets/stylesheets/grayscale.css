@@ -420,6 +420,15 @@ body { font-family: sans-serif; }
   -o-filter: brightness(80%) grayscale(10%);
 }
 
+.figcaption {
+  display: table;
+  position: absolute;
+  height: auto;
+  width: auto;
+  left: 0;
+  top: 0;
+}
+
 /* Responsive Stuff */
 @media screen and (max-width: 568px) {
   /* Stack anything that isn't full-width on smaller screens
