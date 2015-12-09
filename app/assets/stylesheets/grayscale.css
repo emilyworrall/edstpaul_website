@@ -151,6 +151,12 @@ a:focus {
   }
 }
 
+@media screen and (max-width:370px) {
+  .navbar-brand {
+    font-size: 10px;
+  }
+}
+
 /*INTRO*/
 .intro {
   display: table;
@@ -411,8 +417,19 @@ body { font-family: sans-serif; }
   text-align: center;
   font-size: 10px;
   font-size: 1.1vw;
-  margin-top: -7%;
+  margin-top: -1vw;
   font-family: Lato;
+}
+
+@media screen and (max-width: 768px) {
+  .w3-col .caption-text h2 {
+    font-size: 2vw;
+  }
+
+  .w3-col .caption-text p {
+    font-size: 1vw;
+    margin-top: -10%;
+  }
 }
 
 @media screen and (max-width: 581px) {
@@ -422,10 +439,11 @@ body { font-family: sans-serif; }
 
   .w3-col .caption-text p {
     font-size: 3.3vw;
+    margin-top: -8%;
   }
 }
 
-.w3-col .caption-text{
+.w3-col .caption-text {
   color: #fff;
   position: absolute;
   width: 100%;
