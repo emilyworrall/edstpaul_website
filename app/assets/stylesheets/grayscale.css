@@ -505,15 +505,6 @@ hr {
   -o-filter: brightness(40%) grayscale(10%);
 }
 
-.figcaption {
-  display: table;
-  position: absolute;
-  height: auto;
-  width: auto;
-  left: 0;
-  top: 0;
-}
-
 /* Expand the wrap a bit further on larger screens */
 @media screen and (min-width: 1180px) {
   .wider .grid {
