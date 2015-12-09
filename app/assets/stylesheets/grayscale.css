@@ -121,6 +121,10 @@ a:focus {
   font-weight: 400;
 }
 
+.navbar-fixed-top#nav {
+  height: 10px;
+}
+
 @media(min-width:768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -152,7 +156,6 @@ a:focus {
   display: table;
   width: 100%;
   height: auto;
-  padding: 56px 0;
   text-align: center;
   color: #fff;
 
@@ -400,6 +403,10 @@ body { font-family: sans-serif; }
   font-family: Lato;
 }
 
+/*.w3-col .caption-text h2 span {
+  font-weight: 800;
+}*/
+
 .w3-col .caption-text p {
   text-align: center;
   font-size: 10px;
@@ -491,11 +498,11 @@ hr {
   -moz-transform: scale(1.03);
   -ms-transform: scale(1.03);
   -o-transform: scale(1.03);
-  filter: brightness(60%) grayscale(10%);
-  -webkit-filter: brightness(60%) grayscale(10%);
-  -moz-filter: brightness(60%) grayscale(10%);
-  -ms-filter: brightness(60%) grayscale(10%);
-  -o-filter: brightness(60%) grayscale(10%);
+  filter: brightness(40%) grayscale(10%);
+  -webkit-filter: brightness(40%) grayscale(10%);
+  -moz-filter: brightness(40%) grayscale(10%);
+  -ms-filter: brightness(40%) grayscale(10%);
+  -o-filter: brightness(40%) grayscale(10%);
 }
 
 .figcaption {
