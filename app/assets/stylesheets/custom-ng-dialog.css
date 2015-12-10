@@ -1,0 +1,50 @@
+/*Video Templates(ngDialog)*/
+.showreel-content {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.showreel-content iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.video-box {
+  position: relative;
+  padding-bottom: 27.25%;
+  padding-top: 25px;
+  height: 0;
+  left: 2%;
+  width: 639px;
+}
+
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 639px;
+  float: left;
+}
+
+.video-title {
+  width: 78%;
+  margin-left: 15%;
+  margin-top: 19%;
+  font-size: 31px;
+}
+
+.video-description {
+  width: 78%;
+  margin-left: 15%;
+  margin-top: 6%;
+}
+
+div .w3-col.m6 {
+  height: 450px;
+}

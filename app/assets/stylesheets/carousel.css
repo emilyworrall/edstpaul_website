@@ -1,3 +1,7 @@
+.row {
+  padding: 16% 0;
+}
+
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
@@ -22,14 +26,8 @@
   z-index: 2;
 }
 
-
-.row {
-  padding: 11% 0;
-
-}
-
 .item:nth-child(1) {
-  background: url(girl.jpg) no-repeat bottom center scroll;
+  background: url(grass-bg.jpeg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
