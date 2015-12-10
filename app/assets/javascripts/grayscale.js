@@ -37,4 +37,14 @@ $(document).ready( function() {
     isFitWidth: true
   });
 
+  var textTarget = $('#project-header');
+  var textTargetHeight = 300
+
+  $(document).scroll(function(e){
+    var scrollPercent = 1 - ((textTargetHeight - window.scrollY) / textTargetHeight);
+    if(scrollPercent >= 0){
+      textTarget.css('opacity', scrollPercent);
+    }
+  });
+
 });
