@@ -76,4 +76,52 @@ app.controller('mainCtrl', ['$scope', 'ngDialog', function($scope, ngDialog) {
       template: 'm12'
     });
   };
+
+  $scope.open13 = function () {
+    ngDialog.open({
+      template: 'm13'
+    });
+  };
+
+  $scope.open14 = function () {
+    ngDialog.open({
+      template: 'm14'
+    });
+  };
+
+  $scope.open15 = function () {
+    ngDialog.open({
+      template: 'm15'
+    });
+  };
+
+  $scope.open16 = function () {
+    ngDialog.open({
+      template: 'm16'
+    });
+  };
+
+  $scope.open17 = function () {
+    ngDialog.open({
+      template: 'm17'
+    });
+  };
+
+  $scope.open18 = function () {
+    ngDialog.open({
+      template: 'm18'
+    });
+  };
+
+  $scope.open19 = function () {
+    ngDialog.open({
+      template: 'm19'
+    });
+  };
+
+  $scope.open20 = function () {
+    ngDialog.open({
+      template: 'm20'
+    });
+  };
 }]);
