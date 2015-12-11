@@ -63,7 +63,7 @@
   font-family: Lato;
 }
 
-@media screen and (max-height: 768px) and (orientation: landscape) {
+@media screen and (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .w3-col .caption {
     opacity: 1;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1500px) {
+@media screen and (min-width: 769px) and (max-width: 1500px) {
   .w3-col .caption-text p {
     margin-top: -8%;
   }
