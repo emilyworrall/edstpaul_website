@@ -96,10 +96,10 @@
     width: 85%;
     height: 280px;
   }
-}
 
-.ngdialog.ngdialog-theme-default {
-  padding-top: 20%;
+  .ngdialog.ngdialog-theme-default {
+    padding-top: 20%;
+  }
 }
 
 .ngdialog.ngdialog-theme-default .ngdialog-close {
