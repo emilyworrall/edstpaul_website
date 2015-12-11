@@ -98,6 +98,10 @@
   }
 }
 
+.ngdialog.ngdialog-theme-default {
+  padding-top: 20%;
+}
+
 .ngdialog.ngdialog-theme-default .ngdialog-close {
   border-radius: 5px;
   cursor: pointer;
