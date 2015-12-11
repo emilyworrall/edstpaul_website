@@ -1,8 +1,4 @@
 /*Video Templates(ngDialog)*/
-.dialog-content-header {
-	border-bottom: 1px solid #ccc;
-}
-
 .dialog-content-header h2 {
 	color: #fff;
 	opacity: 0.6;
@@ -36,6 +32,16 @@
   float: left;
 }
 
+hr {
+	color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+	.dialog-content-body iframe {
+		height: 200px;
+  }
+}
+
 .dialog-content-body .video-text {
 	height: 100%;
   width: 100%;
@@ -51,19 +57,3 @@
 	font-size: 16px;
 	text-align: left;
 }
-
-
-/*.video-box {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 25px;
-	height: 0;
-}
-
-.video-box iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}*/
