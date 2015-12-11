@@ -51,26 +51,37 @@
   font-family: Lato;
 }
 
-/*.w3-col .caption-text h2 span {
-  font-weight: 800;
-}*/
+.w3-col .caption-text h2 span {
+  font-weight: bold;
+}
 
 .w3-col .caption-text p {
   text-align: center;
   font-size: 10px;
   font-size: 1.1vw;
-  margin-top: -1vw;
+  margin-top: -3%;
   font-family: Lato;
+}
+
+@media screen and (max-height: 768px) and (orientation: landscape) {
+  .w3-col .caption {
+    opacity: 1;
+  }
+  .w3-col .caption-text p  {
+    margin-top: -11%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .w3-col .caption-text h2 {
     font-size: 2vw;
   }
-
   .w3-col .caption-text p {
     font-size: 1vw;
-    margin-top: -10%;
+    margin-top: -17%;
+  }
+  .w3-col .caption {
+    opacity: 1;
   }
 }
 

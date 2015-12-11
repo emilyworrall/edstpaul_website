@@ -2,6 +2,24 @@
   padding: 16% 0;
 }
 
+@media screen and (max-width: 768px) {
+  .row {
+    padding: 20% 0;
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .row {
+    padding: 22% 0;
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .row {
+    padding: 25% 0;
+  }
+}
+
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
