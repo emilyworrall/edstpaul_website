@@ -55,34 +55,6 @@ p {
   }
 }
 
-/*Load More Function*/
-
-/*.w3-col {
-  display: none;
-}
-
-#loadMore {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  background-color: #000;
-  opacity: 0.8;
-  color: #fff;
-  border-width: 0 1px 1px 0;
-  border-style: solid;
-  border-color: #fff;
-  font-family: Lato;
-  transition: all 600ms ease-in-out;
-  -webkit-transition: all 600ms ease-in-out;
-  -moz-transition: all 600ms ease-in-out;
-  -o-transition: all 600ms ease-in-out;
-}
-
-#loadMore:hover {
-  background-color: #fff;
-  color: #000;
-}*/
-
 /*Contact*/
 
 .btn {
