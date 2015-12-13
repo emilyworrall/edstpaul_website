@@ -13,6 +13,7 @@ $(window).scroll(function() {
     }
 });
 
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -37,14 +38,26 @@ $(document).ready( function() {
     isFitWidth: true
   });
 
-  var textTarget = $('#project-header');
+  var textTarget1 = $('#project-header');
+  var textTarget2 = $('#sort');
   var textTargetHeight = 300
 
   $(document).scroll(function(e){
     var scrollPercent = 1 - ((textTargetHeight - window.scrollY) / textTargetHeight);
     if(scrollPercent >= 0){
-      textTarget.css('opacity', scrollPercent);
+      textTarget1.css('opacity', scrollPercent);
+      textTarget2.css('opacity', scrollPercent);
     }
   });
+
+  if ( $(window).width() < 900 ) {
+    $("#sort").addClass("sort-small");
+    $('#project-header').addClass("header-small");
+  } else {
+    $("#sort").removeClass("sort-small");
+    $('#project-header').removeClass("header-small");
+  };
+
+
 
 });

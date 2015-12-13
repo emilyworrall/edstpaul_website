@@ -116,11 +116,17 @@
 
 /*Mosiac Sort*/
 #sort {
-  margin-top: 10%;
+  opacity: 0;
+  margin-top: 13%;
   margin-bottom: 7px;
   font-size: 110%;
   text-align: center;
 }
+
+.sort-small {
+  opacity: 1 !important;
+}
+
 .isotope-item {
   z-index: 2;
 }
