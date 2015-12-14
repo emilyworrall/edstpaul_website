@@ -32,11 +32,9 @@ $('.navbar-collapse ul li a').click(function() {
 
 $(document).ready( function() {
 
-  $('.grid').masonry({
-    itemSelector: '.grid-item',
-    columnWidth: 480,
-    isFitWidth: true
-  });
+  x= 12;
+
+  $(".w3-row .w3-col:lt(" + x + ")").show();
 
   var textTarget1 = $('#project-header');
   var textTarget2 = $('#sort');
@@ -57,7 +55,5 @@ $(document).ready( function() {
     $("#sort").removeClass("sort-small");
     $('#project-header').removeClass("header-small");
   };
-
-
 
 });
