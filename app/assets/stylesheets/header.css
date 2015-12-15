@@ -41,7 +41,7 @@
 }
 
 /*Showreel Button*/
-/*.btn-circle {
+.btn-circle {
   width: 70px;
   height: 70px;
   margin-top: 15px;
@@ -54,6 +54,23 @@
   -webkit-transition: background .3s ease-in-out;
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
+}
+
+.glyphicon {
+  top: 4%;
+}
+
+@media screen and (max-width: 900px) {
+  .btn-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .glyphicon {
+    font-size: 28px;
+    top: -41%;
+    left: -32%;
+  }
 }
 
 .btn-circle:hover,
@@ -80,28 +97,6 @@
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
-
-.glyphicon {
-  top: 4%;
-}*/
-
-.showreel-button {
-  color: #fff;
-  /*border-style: solid;
-  border-color: #fff;
-  border-width: 2px;*/
-  font-family: Lato;
-  font-size: 250%;
-  /*padding-left: 3%;
-  padding-right: 3%;*/
-}
-
-/*.showreel-button:hover,
-.showreel-button:focus {
-  outline: 0;
-  color: #fff;
-  background: rgba(255,255,255,.1);
-}*/
 
 #project-header {
   position: absolute;
