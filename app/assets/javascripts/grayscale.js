@@ -36,17 +36,17 @@ $(document).ready( function() {
 
   $(".w3-row .w3-col:lt(" + x + ")").show();
 
-  var textTarget1 = $('#project-header');
-  var textTarget2 = $('#sort');
-  var textTargetHeight = 300
-
-  $(document).scroll(function(e){
-    var scrollPercent = 1 - ((textTargetHeight - window.scrollY) / textTargetHeight);
-    if(scrollPercent >= 0){
-      textTarget1.css('opacity', scrollPercent);
-      textTarget2.css('opacity', scrollPercent);
-    }
-  });
+  // var textTarget1 = $('#project-header');
+  // var textTarget2 = $('#sort');
+  // var textTargetHeight = 300
+  //
+  // $(document).scroll(function(e){
+  //   var scrollPercent = 1 - ((textTargetHeight - window.scrollY) / textTargetHeight);
+  //   if(scrollPercent >= 0){
+  //     textTarget1.css('opacity', scrollPercent);
+  //     textTarget2.css('opacity', scrollPercent);
+  //   }
+  // });
 
   if ( $(window).width() < 900 ) {
     $("#sort").addClass("sort-small");

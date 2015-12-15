@@ -103,28 +103,27 @@
   background: rgba(255,255,255,.1);
 }*/
 
-#project-header {
+/*#project-header {
   position: absolute;
-  opacity: 0;
   font-size: 10px;
   font-size: 1.8vw;
   text-align: center;
   margin-top: 7%;
   line-height: 1.625em;
   width: 100%;
-}
-
+}*/
+/*
 .header-small {
   opacity: 1 !important;
-}
+}*/
 
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 900px) {
 
   #project-header {
     font-size: 20px;
     opacity: 1;
   }
-}
+}*/
 
 @-webkit-keyframes pulse {
   0% {
