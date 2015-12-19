@@ -1,6 +1,6 @@
 Edward St Paul - Freelance Cinematographer - Portfolio Website
 ----------
-##[WEBSITE](https://www.edwardstpaul.com)
+##[WEBSITE](http://edwardstpaul.com)
 
 ![alt text](https://github.com/danielstpaul/edstpaul_website/blob/master/app%2Fimages%2FMLive1.jpg "banner")
 
