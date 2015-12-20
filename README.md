@@ -7,7 +7,7 @@ Edward St Paul - Freelance Cinematographer - Portfolio Website
 Contributing
 ---------
 Contributions are welcome.
-In your console or equivalent:
+In your command line or equivalent:
 ```
 $ git clone https://github.com/danielstpaul/edstpaul_website.git [folder name]
 $ cd [folder name]
