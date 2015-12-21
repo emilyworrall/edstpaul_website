@@ -100,13 +100,20 @@
 }
 
 @media screen and (max-width:768px) {
+  div.navbar-header {
+    background-color: #000;
+    margin-bottom: -1px;
+  }
+
   .navbar-brand {
     font-size: 12px;
   }
 
-  .navbar-header {
-    /*height: 56px;*/
+  .navbar-nav {
+    background-color: #000;
+    margin-top: 0;
   }
+  
 }
 
 @media screen and (max-width:370px) {
