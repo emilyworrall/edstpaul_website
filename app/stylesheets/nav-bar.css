@@ -103,6 +103,10 @@
   .navbar-brand {
     font-size: 12px;
   }
+
+  .navbar-header {
+    /*height: 56px;*/
+  }
 }
 
 @media screen and (max-width:370px) {

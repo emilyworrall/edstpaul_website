@@ -80,28 +80,11 @@
   position: relative;
 }
 
-/*@media screen and (max-width: 768px) {
-  .w3-col .caption-text h2 {
-    font-size: 2vw;
-  }
-  .w3-col .caption-text p {
-    font-size: 1vw;
-    margin-top: -17%;
-  }
-  .w3-col .caption {
-    opacity: 1;
-  }
-  #sort h1 {
-    font-size: 8vh;
-  }
-}*/
-
-
 
 /*Laptop*/
-@media screen and (min-width: 769px) and (max-width: 1500px) {
+@media screen and (min-width: 768px) and (max-width: 1500px) {
   .w3-col .caption-text p {
-    margin-top: -8%;
+    margin-top: -11%;
   }
 }
 
@@ -112,39 +95,31 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .w3-col .caption {
-    opacity: 1;
-  }
-  hr {
-    margin-top: 5%;
-    margin-bottom: 4%;
-  }
-}
-
 /*Small Screens*/
-@media screen and (min-width: 582px) and (max-width: 767px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
   .w3-col .caption {
     opacity: 1;
   }
   .w3-col .caption-text h2 {
-    font-size: 5vw;
+    font-size: 20px;
+    font-size: 2.3vw;
   }
   .w3-col .caption-text p {
-    font-size: 3.3vw;
-    margin-top: -4%;
+    font-size: 10px;
+    font-size: 1.6vw;
+    margin-top: -7%;
   }
   #sort h1 {
     font-size: 6vh;
   }
   hr {
     margin-top: 5%;
-    margin-bottom: 4%;
+    margin-bottom: 5%;
   }
 }
 
 /*Smart Phone*/
-@media screen and (max-width: 581px) {
+@media screen and (max-width: 600px) {
   .w3-col .caption {
     opacity: 1;
   }
