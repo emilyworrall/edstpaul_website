@@ -84,7 +84,7 @@
 /*Laptop*/
 @media screen and (min-width: 768px) and (max-width: 1500px) {
   .w3-col .caption-text p {
-    margin-top: -11%;
+    margin-top: -7%;
   }
 }
 
