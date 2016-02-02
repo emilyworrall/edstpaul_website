@@ -1,0 +1,10 @@
+/*grid*/
+.w3-container:after,.w3-row:after,.w3-row-padding:after {
+  content:"";display:table;clear:both;
+}
+
+@media only screen and (min-width:601px) {
+.w3-col.m3,.w3-quarter{width:24.99999%;}
+}
+
+.w3-container{padding:0.01em 16px;}
