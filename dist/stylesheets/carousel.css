@@ -45,28 +45,28 @@
 }
 
 .item:nth-child(1) {
-  background: url(grass-bg.jpeg) no-repeat bottom center scroll;
+  background: url(../images/grass-bg.jpeg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .item:nth-child(2) {
-  background: url(ballet.jpg) no-repeat bottom center scroll;
+  background: url(../images/ballet.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .item:nth-child(3) {
-  background: url(girl.jpg) no-repeat bottom center scroll;
+  background: url(../images/girl.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
 .item:nth-child(4) {
-  background: url(blacknwhite-crop.jpg) no-repeat bottom center scroll;
+  background: url(../images/blacknwhite-crop.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
