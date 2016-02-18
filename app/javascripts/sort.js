@@ -9,8 +9,8 @@ $(window).load(function(){
         }
     });
 
-    $('.projects-container a').click(function(){
-        $('.projects-container .current').removeClass('current');
+    $('.dropdown a').click(function(){
+        $('.dropdown .current').removeClass('current');
         $(this).addClass('current');
 
         var selector = $(this).attr('data-filter');

@@ -5,6 +5,12 @@ app.controller('mainCtrl', ['$scope', 'ngDialog', function($scope, ngDialog) {
     });
   };
 
+  $scope.openAbout = function () {
+    ngDialog.open({
+      template: 'about'
+    });
+  };
+
   $scope.open1 = function () {
     ngDialog.open({
       template: 'm1'
@@ -110,18 +116,6 @@ app.controller('mainCtrl', ['$scope', 'ngDialog', function($scope, ngDialog) {
   $scope.open18 = function () {
     ngDialog.open({
       template: 'm18'
-    });
-  };
-
-  $scope.open19 = function () {
-    ngDialog.open({
-      template: 'm19'
-    });
-  };
-
-  $scope.open20 = function () {
-    ngDialog.open({
-      template: 'm20'
     });
   };
 }]);

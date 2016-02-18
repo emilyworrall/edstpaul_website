@@ -14,6 +14,7 @@
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="//fonts.googleapis.com/css?family=Lobster Two:400italic" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lato: 100" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,300bold" rel="stylesheet" type="text/css">
@@ -37,346 +38,288 @@
       <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
         <ul class="nav navbar-nav" id="menu">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden">
-            <a href="#page-top"></a>
+          <li class="hidden"><a href="#page-top"></a>
           </li>
-          <li>
-            <a class="page-scroll" href="#projects">Projects</a>
+          <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="">Projects</a>
+            <ul class="dropdown-menu dropdown-menu-left">
+              <li><a href="" data-filter="*" class="current">all</a></li>
+              <li class="divider"></li>
+              <li><a href="" data-filter=".music">music videos</a></li>
+              <li class="divider"></li>
+              <li><a href="" data-filter=".features">narritive</a></li>
+              <li class="divider"></li>
+              <li><a href="" data-filter=".commercials">commercials</a></li>
+            </ul>
           </li>
-          <li>
-            <a class="page-scroll" href="#contact">Contact</a>
+          <li><a href="" ng-click=openAbout()>About</a>
+          </li>
+          <li><a class="page-scroll" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Intro Header -->
-  <header class="intro">
-    <div class="intro-body">
-      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-          <div class="active item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <a ng-click="openShow()" class="btn btn-circle">
-                          <span class="glyphicon glyphicon-play"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <a ng-click="openShow()" class="btn btn-circle">
-                          <span class="glyphicon glyphicon-play"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <a ng-click="openShow()" class="btn btn-circle">
-                          <span class="glyphicon glyphicon-play"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <a ng-click="openShow()" class="btn btn-circle">
-                          <span class="glyphicon glyphicon-play"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
   <!-- Projects Section -->
   <section id="projects" class="container content-section">
-    <div class="projects-container" id="sort">
-      <h1 id="project-header">Projects</h1>
-      <a href="" data-filter="*" class="current">all</a>
-      <i class="fa fa-ellipsis-v"></i>
-      <a href="" data-filter=".music">music videos</a>
-      <i class="fa fa-ellipsis-v"></i>
-      <a href="" data-filter=".features">narritive</a>
-      <i class="fa fa-ellipsis-v"></i>
-      <a href="" data-filter=".commercials">commercials</a>
-    </div>
-
     <div class="w3-row">
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="Samson-VVBROWN" src="images/VVB1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open1()>
+          <div class="caption" ng-click=open1()>
+            <!-- <div class="caption-text" ng-click=open1()>
               <h2>VV <span>BROWN</span></h2>
               <hr width="70%">
               <br>
               <p>Samson</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="Tides-AUDIOSHOCK" src="images/AS1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open2()>
+          <div class="caption" ng-click=open2()>
+            <!-- <div class="caption-text" ng-click=open2()>
               <h2>AUDIOSHOCK<span></span></h2>
               <hr width="70%">
               <br>
               <p>Tides</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="Titan-BRETON" src="images/Breton1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open3()>
+          <div class="caption" ng-click=open3()>
+            <!-- <div class="caption-text" ng-click=open3()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Titan</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="IHaven'tThoughtAboutYouYet-FLAUNT" src="images/Flaunt1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open4()>
+          <div class="caption" ng-click=open4()>
+            <!-- <div class="caption-text" ng-click=open4()>
               <h2>FLAUNT<span></span></h2>
               <hr width="70%">
               <br>
               <p>I Haven't Thought About You Yet</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur features">
         <li>
           <img id="FadeToGray-GRACESEES" src="images/GSees1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open5()>
+          <div class="caption" ng-click=open5()>
+            <!-- <div class="caption-text" ng-click=open5()>
               <h2>GRACE <span>SEES</span></h2>
               <hr width="70%">
               <br>
               <p>Fade To Gray</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur commercials">
         <li>
           <img id="Afterthoughts-GRAYWIND" src="images/GW1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open6()>
+          <div class="caption" ng-click=open6()>
+            <!-- <div class="caption-text" ng-click=open6()>
               <h2>GRAYWIND<span></span></h2>
               <hr width="70%">
               <br>
               <p>Afterthoughts</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="StudioGames-MARVINLIVE" src="images/MLive1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open7()>
+          <div class="caption" ng-click=open7()>
+            <!-- <div class="caption-text" ng-click=open7()>
               <h2>MARVIN <span>LIVE</span></h2>
               <hr width="70%">
               <br>
               <p>Studio Games</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="Stereo-TENTERHOOK" src="images/THook1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open8()>
+          <div class="caption" ng-click=open8()>
+            <!-- <div class="caption-text" ng-click=open8()>
               <h2>TENTERHOOK<span></span></h2>
               <hr width="70%">
               <br>
               <p>Stereo</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open9()>
+          <div class="caption" ng-click=open9()>
+            <!-- <div class="caption-text" ng-click=open9()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ForYou-FICKLEFRIENDS" src="images/Flaunt1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open10()>
+          <div class="caption" ng-click=open10()>
+            <!-- <div class="caption-text" ng-click=open10()>
               <h2>FICKLE<span> FRIENDS</span></h2>
               <hr width="70%">
               <br>
               <p>For You</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open11()>
+          <div class="caption" ng-click=open11()>
+            <!-- <div class="caption-text" ng-click=open11()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open12()>
+          <div class="caption" ng-click=open12()>
+            <!-- <div class="caption-text" ng-click=open12()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open13()>
+          <div class="caption" ng-click=open13()>
+            <!-- <div class="caption-text" ng-click=open13()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open14()>
+          <div class="caption" ng-click=open14()>
+            <!-- <div class="caption-text" ng-click=open14()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open15()>
+          <div class="caption" ng-click=open15()>
+            <!-- <div class="caption-text" ng-click=open15()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open16()>
+          <div class="caption" ng-click=open16()>
+            <!-- <div class="caption-text" ng-click=open16()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open17()>
+          <div class="caption" ng-click=open17()>
+            <!-- <div class="caption-text" ng-click=open17()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open18()>
+          <div class="caption" ng-click=open18()>
+            <!-- <div class="caption-text" ng-click=open18()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open19()>
+          <div class="caption" ng-click=open19()>
+            <!-- <div class="caption-text" ng-click=open19()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
       <div class="w3-col m3 image-hover img-zoom-in img-sharp-blur music">
         <li>
           <img id="ParthianShot-BRETON" src="images/Breton-P1.jpg" style="width:100%"></img>
-          <div class="caption">
-            <div class="caption-text" ng-click=open20()>
+          <div class="caption" ng-click=open20()>
+            <!-- <div class="caption-text" ng-click=open20()>
               <h2>BRETON<span></span></h2>
               <hr width="70%">
               <br>
               <p>Parthian Shot</p>
-            </div>
+            </div> -->
           </div>
         </li>
       </div>
@@ -385,12 +328,11 @@
       <button id="loadMore">Load More</button>
     </div> -->
   </section>
+
   <!-- Contact Section -->
   <section id="contact" class="container content-section text-center">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-        <h1>Contact</h1>
-
         <p><a href="mailto:edwardstpaul@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope-o"></i> <span class=network-name>edwardstpaul@gmail.com</span></a>
         </p>
 
@@ -431,7 +373,6 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the <span>Met Film School<span>, Edward has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
         </p>
       </div>
     </div>
@@ -451,7 +392,6 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
         </p>
       </div>
     </div>
@@ -471,7 +411,6 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
         </p>
       </div>
     </div>
@@ -491,7 +430,6 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
         </p>
       </div>
     </div>
@@ -511,7 +449,6 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
         </p>
       </div>
     </div>
@@ -531,7 +468,6 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
         </p>
       </div>
     </div>
@@ -551,7 +487,6 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
         </p>
       </div>
     </div>
@@ -571,7 +506,6 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
         </p>
       </div>
     </div>
@@ -591,7 +525,6 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
         </p>
       </div>
     </div>
@@ -611,7 +544,7 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
+
         </p>
       </div>
     </div>
@@ -631,7 +564,7 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
+
         </p>
       </div>
     </div>
@@ -651,7 +584,7 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
+
         </p>
       </div>
     </div>
@@ -671,72 +604,138 @@
       </div>
       <div class="video-text">
         <p>
-          A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
+
         </p>
       </div>
     </div>
   </script>
 
-  <!-- <div class="dialog-content-header">
-    <h2>Showreel<span></span></h2>
-    <hr>
-  </div>
-  <div class="dialog-content-body">
-
-    <div class="video-text">
-      <p>
-        A cinematography graduate of the NFTS, David has a passion for visual story telling that has the capacity to affect and move audiences. Rather than injecting a predetermined style onto a film, he adapts his visual aesthetic to support each story and the director’s vision of it. The films he has shot often deal with weighty social issues, and have been exhibited internationally. David enjoys working collaboratively across a range of formats, from narrative to music video and commercial content.
-      </p>
-    </div>
-  </div> -->
-
   <script type="text/ng-template" id="m13">
+    <div class="dialog-content-header">
+      <h2>Showreel<span></span></h2>
+      <hr>
+    </div>
+    <div class="dialog-content-body">
+      <div class="video-box">
+        <iframe width="1000" height="460"
+        src="//www.youtube.com/embed/d3hsPjdzwSU?autoplay=1&showinfo=0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+        frameBorder="0">
+        </iframe>
+      </div>
+      <div class="video-text">
+        <p>
 
+        </p>
+      </div>
+    </div>
   </script>
 
   <script type="text/ng-template" id="m14">
+    <div class="dialog-content-header">
+      <h2>Showreel<span></span></h2>
+      <hr>
+    </div>
+    <div class="dialog-content-body">
+      <div class="video-box">
+        <iframe width="1000" height="460"
+        src="//www.youtube.com/embed/d3hsPjdzwSU?autoplay=1&showinfo=0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+        frameBorder="0">
+        </iframe>
+      </div>
+      <div class="video-text">
+        <p>
 
+        </p>
+      </div>
+    </div>
   </script>
 
   <script type="text/ng-template" id="m15">
+    <div class="dialog-content-header">
+      <h2>Showreel<span></span></h2>
+      <hr>
+    </div>
+    <div class="dialog-content-body">
+      <div class="video-box">
+        <iframe width="1000" height="460"
+        src="//www.youtube.com/embed/d3hsPjdzwSU?autoplay=1&showinfo=0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+        frameBorder="0">
+        </iframe>
+      </div>
+      <div class="video-text">
+        <p>
 
+        </p>
+      </div>
+    </div>
   </script>
 
   <script type="text/ng-template" id="m16">
+    <div class="dialog-content-header">
+      <h2>Showreel<span></span></h2>
+      <hr>
+    </div>
+    <div class="dialog-content-body">
+      <div class="video-box">
+        <iframe width="1000" height="460"
+        src="//www.youtube.com/embed/d3hsPjdzwSU?autoplay=1&showinfo=0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+        frameBorder="0">
+        </iframe>
+      </div>
+      <div class="video-text">
+        <p>
 
+        </p>
+      </div>
+    </div>
   </script>
 
   <script type="text/ng-template" id="m17">
+    <div class="dialog-content-header">
+      <h2>Showreel<span></span></h2>
+      <hr>
+    </div>
+    <div class="dialog-content-body">
+      <div class="video-box">
+        <iframe width="1000" height="460"
+        src="//www.youtube.com/embed/d3hsPjdzwSU?autoplay=1&showinfo=0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+        frameBorder="0">
+        </iframe>
+      </div>
+      <div class="video-text">
+        <p>
 
+        </p>
+      </div>
+    </div>
   </script>
 
   <script type="text/ng-template" id="m18">
+    <div class="dialog-content-header">
+      <h2>Showreel<span></span></h2>
+      <hr>
+    </div>
+    <div class="dialog-content-body">
+      <div class="video-box">
+        <iframe width="1000" height="460"
+        src="//www.youtube.com/embed/d3hsPjdzwSU?autoplay=1&showinfo=0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+        frameBorder="0">
+        </iframe>
+      </div>
+      <div class="video-text">
+        <p>
 
-  </script>
-
-  <script type="text/ng-template" id="m19">
-
-  </script>
-
-  <script type="text/ng-template" id="m20">
-
-  </script>
-
-  <script type="text/ng-template" id="m21">
-
-  </script>
-
-  <script type="text/ng-template" id="m22">
-
+        </p>
+      </div>
+    </div>
   </script>
 
   <!-- Script -->
   <script src="javascripts/jquery.js"></script>
   <script src="javascripts/angular.min.js"></script>
   <script src="javascripts/app.js"></script>
-  <script src="javascripts/bootstrap.js"></script>
   <script src="javascripts/bootstrap.min.js"></script>
-  <script src="javascripts/grayscale.js"></script>
+  <script src="javascripts/nav.js"></script>
   <script src="javascripts/jquery.easing.min.js"></script>
   <script src="javascripts/loadMore.js"></script>
   <script src="javascripts/mainCtrl.js"></script>
