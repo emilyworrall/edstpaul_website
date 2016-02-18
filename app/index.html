@@ -9,9 +9,12 @@
   <meta name="description" content="Edward St Paul Portfolio Website">
   <meta name="author" content="Daniel St Paul & Emily Worrall">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CDNs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- Stylesheets -->
   <link rel="stylesheet" href="stylesheets/main.css">
-  <!-- Custom Fonts -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="//fonts.googleapis.com/css?family=Lobster Two:400italic" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato: 100" rel="stylesheet" type="text/css">
@@ -21,21 +24,20 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="mainCtrl">
+<body id="page-top" data-spy="scroll" data-target="#nav" ng-controller="mainCtrl">
   <!-- Navigation -->
   <nav class="navbar navbar-custom navbar-fixed-top" id="nav" role="navigation">
     <div class="container" id="navheader">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
           <i class="fa fa-bars"></i>
         </button>
         <a class="navbar-brand page-scroll" href="#page-top" id ="title">
-          <span class="light">Edward St Paul |</span>
-          Cinematographer
+          <span class="light">Edward St Paul |</span> Cinematographer
         </a>
       </div>
 
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <div class="collapse navbar-collapse navbar-right" id="nav-collapse">
         <ul class="nav navbar-nav" id="menu">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden"><a href="#page-top"></a>
@@ -51,9 +53,9 @@
               <li><a href="" data-filter=".commercials">commercials</a></li>
             </ul>
           </li>
-          <li><a href="" ng-click=openAbout()>About</a>
+          <li><a ng-click=openAbout() href="" id="about-button">About</a>
           </li>
-          <li><a class="page-scroll" href="#contact">Contact</a>
+          <li><a class="page-scroll" href="#contact" id="contact-button">Contact</a>
           </li>
         </ul>
       </div>
@@ -731,18 +733,15 @@
   </script>
 
   <!-- Script -->
-  <script src="javascripts/jquery.js"></script>
+  <!-- <script src="javascripts/jquery.js"></script> -->
+  <script src="javascripts/isotope.pkgd.min.js"></script>
+  <script src="javascripts/masonry.pkgd.min.js"></script>
+  <script src="javascripts/sort.js"></script>
   <script src="javascripts/angular.min.js"></script>
   <script src="javascripts/app.js"></script>
-  <script src="javascripts/bootstrap.min.js"></script>
-  <script src="javascripts/nav.js"></script>
-  <script src="javascripts/jquery.easing.min.js"></script>
-  <script src="javascripts/loadMore.js"></script>
   <script src="javascripts/mainCtrl.js"></script>
-  <script src="javascripts/masonry.pkgd.min.js"></script>
+  <script src="javascripts/jquery.easing.min.js"></script>
   <script src="javascripts/ngDialog.min.js"></script>
-  <script src="javascripts/sort.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-
+  <script src="javascripts/nav.js"></script>
 </body>
 </html>

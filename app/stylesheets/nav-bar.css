@@ -1,5 +1,4 @@
 /*NAV BAR*/
-
 .container#navheader {
   width: 100%;
 }
@@ -13,6 +12,7 @@
   text-transform: uppercase;
   font-family: Lato;
   background-color: #000;
+  opacity: 0.8;
 }
 
 #title {
@@ -48,7 +48,6 @@
 
 .navbar-custom .nav li a:hover {
   outline: 0;
-  /*color: rgba(255,255,255,.8);*/
   background-color: transparent;
 }
 
@@ -62,20 +61,8 @@
   outline: 0;
 }
 
-.navbar-custom .nav li.active a {
-  background-color: rgba(255,255,255,.3);
-}
-
-.navbar-custom .nav li.active a:hover {
-  color: #000;
-}
-
-.navbar-header i {
-  color: #000;
-}
-
 .light {
-  font-weight: 400;
+  font-weight: 200;
 }
 
 /*Responsive Nav*/

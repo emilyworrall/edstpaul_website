@@ -19,13 +19,14 @@ $(function() {
 });
 
 // Closes the responsive menu on menu item click
-$('.navbar-collapse ul li a').click(function() {
+$('.dropdown-menu a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-// Dropdown menu
-// $('li.dropdown').hover(function() {
-//   $(this).find('.dropdown-menu').stop(true, true).fadeIn(100);
-// }, function() {
-//   $(this).find('.dropdown-menu').stop(true, true).fadeOut(500);
-// });
+$('.navbar-collapse ul li a#contact-button').click(function() {
+    $('.navbar-toggle:visible').click();
+});
+
+$('.navbar-collapse ul li a#about-button').click(function() {
+    $('.navbar-toggle:visible').click();
+});
