@@ -11,17 +11,16 @@
 /*Main*/
 
 html {
+  position: relative;
   width: 100%;
-  height: auto;
+  min-height: 100%; /*Sticky Footer*/
 }
 
 body {
-  width: 100%;
-  height: 100%;
   font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: black;
   background-color: #fff;
-  margin: 0px;
+  margin: 0 0 2.5em;
 }
 
 h1,
@@ -73,20 +72,11 @@ p {
 
 .btn {
   text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Lato,Helvetica,Arial,sans-serif;
   font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-}
-
-.btn-default {
-  color: black;
-  background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
 }
 
 ul.banner-social-buttons {
@@ -112,14 +102,19 @@ ul.banner-social-buttons {
 }
 
 /*Footer*/
+/*Sticky Footer*/
 
 footer {
-  padding: 10px 0;
+  position: absolute;
+  height: 2.5em;
+  bottom: 0;
+  width: 100%;
   background-color: black;
   opacity: 0.8;
 }
 
 footer p {
   font-family: Lato;
+  font-weight: 100;
   margin: 0;
 }
