@@ -45,12 +45,6 @@
   transition:all 1s ease-in-out;
 }
 
-/*.loadMoreWrap {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-}*/
 
 /*Laptop*/
 @media screen and (min-width: 768px) and (max-width: 1500px) {
@@ -59,30 +53,17 @@
 
 /*iPad*/
 @media screen and (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .w3-col .caption {
-    opacity: 1;
-  }
+
 }
 
 /*Small Screens*/
 @media screen and (min-width: 600px) and (max-width: 767px) {
-  .w3-col .caption {
-    opacity: 1;
-  }
-  #sort h1 {
-    font-size: 30px;
-  }
-  hr {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
+
 }
 
 /*Smart Phone*/
 @media screen and (max-width: 600px) {
-  .w3-col .caption {
-    opacity: 1;
-  }
+
 }
 
 /*Mosiac Sort*/
@@ -130,28 +111,28 @@
 }
 
 .img-zoom-in img {
-  transition: all 1000ms ease-in;
+  transition: all 500ms ease-in;
   -webkit-transition-timing-function: ease-in;
-  -webkit-transition-duration: 1000ms;
+  -webkit-transition-duration: 500ms;
   -moz-transition-timing-function: ease-in;
-  -moz-transition-duration: 1000ms;
+  -moz-transition-duration: 500ms;
   -ms-transition-timing-function: ease-in;
-  -ms-transition-duration: 1000ms;
+  -ms-transition-duration: 500ms;
   -o-transition-timing-function: ease-in;
-  -o-transition-duration: 1000ms;
+  -o-transition-duration: 500ms;
 }
 
 .img-zoom-in:hover img {
-  transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-  -moz-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  -o-transform: scale(1.03);
-  filter: brightness(40%) grayscale(10%);
-  -webkit-filter: brightness(40%) grayscale(10%);
-  -moz-filter: brightness(40%) grayscale(10%);
-  -ms-filter: brightness(40%) grayscale(10%);
-  -o-filter: brightness(40%) grayscale(10%);
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  opacity: 0.6;
+  /*-webkit-filter: brightness(120%);
+  -moz-filter: brightness(120%);
+  -ms-filter: brightness(120%);
+  -o-filter: brightness(120%);*/
 }
 
 /* Expand the wrap a bit further on larger screens */
