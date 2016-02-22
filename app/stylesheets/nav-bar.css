@@ -15,10 +15,6 @@
   opacity: 0.8;
 }
 
-#title {
-  font-weight: 700;
-}
-
 #title:focus {
   outline: 0;
 }
@@ -91,8 +87,9 @@
     margin-bottom: -1px;
   }
 
-  .navbar-brand {
-    font-size: 12px;
+  .navbar-brand#title {
+    font-size: 15px;
+    margin: 0;
   }
 
   .navbar-nav {
@@ -103,7 +100,9 @@
 }
 
 @media screen and (max-width:370px) {
-  .navbar-brand {
-    font-size: 10px;
+  .navbar-brand#title {
+    font-size: 13px;
+    line-height: 2em;
+    margin: 0;
   }
 }

@@ -1,4 +1,4 @@
-$(window).load(function(){
+$(document).ready(function(){
   var $container = $('.w3-row');
   $container.isotope({
       filter: '*',

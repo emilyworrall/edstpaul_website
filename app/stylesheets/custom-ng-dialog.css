@@ -5,11 +5,11 @@
   text-align: center;
   font-size: 22px;
 	font-family: Lato;
-	font-weight: bold;
+	font-weight: 100;
 }
 
 .dialog-content-header span {
-	font-weight: normal;
+	font-weight: 400;
 }
 
 .dialog-content-body {
